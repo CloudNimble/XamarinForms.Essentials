@@ -1,0 +1,29 @@
+﻿{
+  "dependencies": {
+    "Microsoft.AppCenter.Analytics": "1.1.0",
+    "Microsoft.AppCenter.Crashes": "1.1.0",
+    "Microsoft.AppCenter.Distribute": "1.1.0",
+    "Microsoft.Azure.Mobile.Client": "4.0.2",
+    "Microsoft.Azure.Mobile.Client.SQLiteStore": "4.0.2",
+    "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.6",
+    "Newtonsoft.Json": "10.0.3",
+    "PCLStorage": "1.0.2",
+    "System.Net.Http": "4.3.3",
+    "System.Security.Cryptography.Algorithms": "4.3.1",
+    "System.Security.Cryptography.X509Certificates": "4.3.2",
+    "System.Xml.ReaderWriter": "4.3.1",
+    "Xam.Plugins.Settings": "3.1.1",
+    "Xamarin.Forms": "2.5.0.122203"
+  },
+  "frameworks": {
+    "uap10.0.16299": {}
+  },
+  "runtimes": {
+    "win10-arm": {},
+    "win10-arm-aot": {},
+    "win10-x86": {},
+    "win10-x86-aot": {},
+    "win10-x64": {},
+    "win10-x64-aot": {}
+  }
+}

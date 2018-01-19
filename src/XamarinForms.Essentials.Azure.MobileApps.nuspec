@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>XamarinForms.Essentials.Azure.MobileApps</id>
+    <version>1.0.0-Beta2</version>
+    <authors>Robert McLaws</authors>
+    <owners>AdvancedREI</owners>
+    <licenseUrl>http://www.ohloh.net/licenses/mslpl</licenseUrl>
+    <iconUrl>https://advancedrei.blob.core.windows.net/nuget/XamlEssentials.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A helper library of BindingConverters, MarkupExtensions, and other utilities for building XAML applications on platforms that support Xamarin.Forms.</description>
+    <summary>A library of BindingConverters, MarkupExtensions, and helpers for Xamarin.Forms.</summary>
+    <releaseNotes>
+1.0.0 - Initial version
+    </releaseNotes>
+    <copyright>2018, CloudNimble, Inc.</copyright>
+    <language>en-US</language>
+    <tags>XAML, Xamarin, Xamarin.Forms</tags>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="Microsoft.Azure.Mobile.Client" version="4.0.2" />
+        <dependency id="Microsoft.Azure.Mobile.Client.SQLiteStore" version="4.0.2" />
+        <dependency id="Xam.Plugin.Connectivity" version="3.0.3" />
+        <dependency id="Xam.Plugins.Settings" version="3.1.1" />
+        <dependency id="Xamarin.Forms" version="2.5.0.122203" />
+        <dependency id="XamarinForms.Essentials.Core" version="1.0.0-Beta2" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- Cross-platform reference assemblies -->
+    <file src="XamarinForms.Essentials.Azure.MobileAppsEssentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.Azure.MobileAppsEssentials.dll" target="lib\netstandard2.0\XamarinForms.Essentials.Azure.MobileAppsEssentials.dll" />
+    <file src="XamarinForms.Essentials.Azure.MobileAppsEssentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.Azure.MobileAppsEssentials.pdb" target="lib\netstandard2.0\XamarinForms.Essentials.Azure.MobileAppsEssentials.pdb" />
+    <file src="XamarinForms.Essentials.Azure.MobileAppsEssentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.Azure.MobileAppsEssentials.xml" target="lib\netstandard2.0\XamarinForms.Essentials.Azure.MobileAppsEssentials.xml" />
+
+    <!--<file src="README.md" target="readme.md" />-->
+    <file src="XamarinForms.Essentials.Azure.MobileAppsEssentials\**\*.cs" exclude="**\obj\**\*.*" target="src\XamarinForms.Essentials.Azure.MobileAppsEssentials" />
+  </files>
+</package>

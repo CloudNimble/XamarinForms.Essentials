@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>XamarinForms.Essentials</id>
+    <version>1.0.0-Beta2</version>
+    <authors>Robert McLaws</authors>
+    <owners>CloudNimble</owners>
+    <licenseUrl>http://www.ohloh.net/licenses/mslpl</licenseUrl>
+    <iconUrl>https://advancedrei.blob.core.windows.net/nuget/XamlEssentials.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A helper library of BindingConverters, MarkupExtensions, and other utilities for building XAML applications on platforms that support Xamarin.Forms.</description>
+    <summary>A library of BindingConverters, MarkupExtensions, and helpers for Xamarin.Forms.</summary>
+    <releaseNotes>
+1.0.0 - Initial version
+    </releaseNotes>
+    <copyright>2018 CloudNimble, Inc.</copyright>
+    <language>en-US</language>
+    <tags>XAML, Xamarin, Xamarin.Forms</tags>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="PCLStorage" version="1.0.2" />
+        <dependency id="Xam.Plugin.Connectivity" version="3.0.3" />
+        <dependency id="Xam.Plugins.Settings" version="3.1.1" />
+        <dependency id="XamarinForms.Essentials.Core" version="1.0.0-Beta2" />
+        <dependency id="Xamarin.Forms" version="2.5.0.122203" />
+      </group>
+      <!--<group targetFramework="MonoAndroid">
+        --><!--MonoAndroid dependencies go here--><!--
+      </group>
+      <group targetFramework="Xamarin.iOS10">
+        --><!--Xamarin.iOS10 dependencies go here--><!--
+      </group>
+      <group targetFramework="uap">
+        --><!--uap dependencies go here--><!--
+      </group>-->
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- Cross-platform reference assemblies -->
+    <file src="XamarinForms.Essentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.dll" target="lib\netstandard2.0\XamarinForms.Essentials.dll" />
+    <file src="XamarinForms.Essentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.pdb" target="lib\netstandard2.0\XamarinForms.Essentials.pdb" />
+    <file src="XamarinForms.Essentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.xml" target="lib\netstandard2.0\XamarinForms.Essentials.xml" />
+    <!--<file src="Plugin.LoggingLibrary.Abstractions\bin\Release\Plugin.LoggingLibrary.Abstractions.dll" target="lib\netstandard1.4\Plugin.LoggingLibrary.Abstractions.dll" />
+    <file src="Plugin.LoggingLibrary.Abstractions\bin\Release\Plugin.LoggingLibrary.Abstractions.xml" target="lib\netstandard1.4\Plugin.LoggingLibrary.Abstractions.xml" />-->
+
+    <!-- iOS reference assemblies -->
+    <file src="XamarinForms.Essentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.dll" target="lib\Xamarin.iOS10\XamarinForms.Essentials.dll" />
+    <file src="XamarinForms.Essentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.pdb" target="lib\Xamarin.iOS10\XamarinForms.Essentials.pdb" />
+    <file src="XamarinForms.Essentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.xml" target="lib\Xamarin.iOS10\XamarinForms.Essentials.xml" />
+    <file src="XamarinForms.Essentials.iOS\bin\$configuration$\XamarinForms.Essentials.iOS.dll" target="lib\Xamarin.iOS10\XamarinForms.Essentials.iOS.dll" />
+    <file src="XamarinForms.Essentials.iOS\bin\$configuration$\XamarinForms.Essentials.iOS.pdb" target="lib\Xamarin.iOS10\XamarinForms.Essentials.iOS.pdb" />
+    <file src="XamarinForms.Essentials.iOS\bin\$configuration$\XamarinForms.Essentials.iOS.xml" target="lib\Xamarin.iOS10\XamarinForms.Essentials.iOS.xml" />
+
+    <!-- Android reference assemblies -->
+    <!--<file src="Plugin.LoggingLibrary.Android\bin\Release\Plugin.LoggingLibrary.dll" target="lib\MonoAndroid10\Plugin.LoggingLibrary.dll" />
+    <file src="Plugin.LoggingLibrary.Android\bin\Release\Plugin.LoggingLibrary.xml" target="lib\MonoAndroid10\Plugin.LoggingLibrary.xml" />-->
+
+    <!-- UWP reference assemblies -->
+    <!--<file src="Plugin.LoggingLibrary.UWP\bin\Release\Plugin.LoggingLibrary.dll" target="lib\UAP10\Plugin.LoggingLibrary.dll" />
+    <file src="Plugin.LoggingLibrary.UWP\bin\Release\Plugin.LoggingLibrary.xml" target="lib\UAP10\Plugin.LoggingLibrary.xml" />-->
+
+    <!--<file src="README.md" target="readme.md" />-->
+    <file src="XamarinForms.Essentials\**\*.cs" exclude="**\obj\**\*.*" target="src\XamarinForms.Essentials" />
+    <file src="XamarinForms.Essentials.iOS\**\*.cs" exclude="**\obj\**\*.*" target="src\XamarinForms.Essentials.iOS" />
+  </files>
+</package>

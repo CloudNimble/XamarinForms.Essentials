@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>XamarinForms.Essentials.AppCenter</id>
+    <version>1.0.0-Beta2</version>
+    <authors>Robert McLaws</authors>
+    <owners>CloudNimble</owners>
+    <licenseUrl>http://www.ohloh.net/licenses/mslpl</licenseUrl>
+    <iconUrl>https://advancedrei.blob.core.windows.net/nuget/XamlEssentials.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A helper library of BindingConverters, MarkupExtensions, and other utilities for building XAML applications on platforms that support Xamarin.Forms.</description>
+    <summary>A library of BindingConverters, MarkupExtensions, and helpers for Xamarin.Forms.</summary>
+    <releaseNotes>
+1.0.0 - Initial version
+    </releaseNotes>
+    <copyright>2018 CloudNimble, Inc.</copyright>
+    <language>en-US</language>
+    <tags>XAML, Xamarin, Xamarin.Forms</tags>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="Microsoft.AppCenter.Analytics" version="1.1.0" />
+        <dependency id="Xamarin.Forms" version="2.5.0.12203" />
+        <dependency id="XamarinForms.Essentials.Core" version="1.0.0-Beta2" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- Cross-platform reference assemblies -->
+    <file src="XamarinForms.Essentials.AppCenterEssentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.AppCenterEssentials.dll" target="lib\netstandard2.0\XamarinForms.Essentials.AppCenterEssentials.dll" />
+    <file src="XamarinForms.Essentials.AppCenterEssentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.AppCenterEssentials.pdb" target="lib\netstandard2.0\XamarinForms.Essentials.AppCenterEssentials.pdb" />
+    <file src="XamarinForms.Essentials.AppCenterEssentials\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.AppCenterEssentials.xml" target="lib\netstandard2.0\XamarinForms.Essentials.AppCenterEssentials.xml" />
+
+    <!--<file src="README.md" target="readme.md" />-->
+    <file src="XamarinForms.Essentials.AppCenterEssentials\**\*.cs" exclude="**\obj\**\*.*" target="src\XamarinForms.Essentials.AppCenterEssentials" />
+  </files>
+</package>

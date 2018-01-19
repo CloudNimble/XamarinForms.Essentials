@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>XamarinForms.Essentials.Core</id>
+    <version>1.0.0-Beta2</version>
+    <authors>Robert McLaws</authors>
+    <owners>AdvancedREI</owners>
+    <licenseUrl>http://www.ohloh.net/licenses/mslpl</licenseUrl>
+    <iconUrl>https://advancedrei.blob.core.windows.net/nuget/XamlEssentials.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A helper library of BindingConverters, MarkupExtensions, and other utilities for building XAML applications on platforms that support Xamarin.Forms.</description>
+    <summary>A library of BindingConverters, MarkupExtensions, and helpers for Xamarin.Forms.</summary>
+    <releaseNotes>
+1.0.0 - Initial version
+    </releaseNotes>
+    <copyright>2018 CloudNimble, Inc.</copyright>
+    <language>en-US</language>
+    <tags>XAML, Xamarin, Xamarin.Forms</tags>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+
+      </group>
+      <!--<group targetFramework="MonoAndroid">
+        --><!--MonoAndroid dependencies go here--><!--
+      </group>
+      <group targetFramework="Xamarin.iOS10">
+        --><!--Xamarin.iOS10 dependencies go here--><!--
+      </group>
+      <group targetFramework="uap">
+        --><!--uap dependencies go here--><!--
+      </group>-->
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- Cross-platform reference assemblies -->
+    <file src="XamarinForms.Essentials.Core\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.Core.dll" target="lib\netstandard2.0\XamarinForms.Essentials.Core.dll" />
+    <file src="XamarinForms.Essentials.Core\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.Core.pdb" target="lib\netstandard2.0\XamarinForms.Essentials.Core.pdb" />
+    <file src="XamarinForms.Essentials.Core\bin\$configuration$\netstandard2.0\XamarinForms.Essentials.Core.xml" target="lib\netstandard2.0\XamarinForms.Essentials.Core.xml" />
+    <!--<file src="Plugin.LoggingLibrary.Abstractions\bin\Release\Plugin.LoggingLibrary.Abstractions.dll" target="lib\netstandard1.4\Plugin.LoggingLibrary.Abstractions.dll" />
+    <file src="Plugin.LoggingLibrary.Abstractions\bin\Release\Plugin.LoggingLibrary.Abstractions.xml" target="lib\netstandard1.4\Plugin.LoggingLibrary.Abstractions.xml" />-->
+
+    <!--<file src="README.md" target="readme.md" />-->
+    <file src="XamarinForms.Essentials.Core\**\*.cs" exclude="**\obj\**\*.*" target="src\XamarinForms.Essentials.Core" />
+  </files>
+</package>

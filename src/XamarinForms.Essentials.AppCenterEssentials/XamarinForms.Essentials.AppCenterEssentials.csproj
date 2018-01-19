@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Robert McLaws</Authors>
+    <Company>CloudNimble, Inc.</Company>
+    <Copyright>2018 CloudNimble, Inc.</Copyright>
+    <PackageTags>XAML, Xamarin, Xamarin.Forms</PackageTags>
+    <Description>A helper library of BindingConverters, MarkupExtensions, and other utilities for building XAML applications on platforms that support Xamarin.Forms.</Description>
+    <PackageReleaseNotes>1.0.0 - Initial Version.</PackageReleaseNotes>
+    <IncludeSource>True</IncludeSource>
+    <IncludeSymbols>True</IncludeSymbols>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinForms.Essentials.Core\XamarinForms.Essentials.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>
