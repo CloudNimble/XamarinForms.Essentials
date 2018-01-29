@@ -54,11 +54,11 @@
     <AndroidHttpClientHandlerType>System.Net.Http.HttpClientHandler</AndroidHttpClientHandlerType>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AppCenter" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AppCenter" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.2.0" />
     <PackageReference Include="Microsoft.AppCenter.Distribute">
-      <Version>1.1.0</Version>
+      <Version>1.2.0</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.CSharp">
       <Version>4.4.1</Version>
@@ -210,11 +210,11 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\profile_generic.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamarinForms.Essentials.Azure.MobileApps\XamarinForms.Essentials.Azure.MobileApps.csproj">
+    <ProjectReference Include="..\XamarinForms.Essentials.Azure.MobileAppsEssentials\XamarinForms.Essentials.Azure.MobileAppsEssentials.csproj">
       <Project>{bf382ee0-ad8e-4b4f-8f7f-c9d6fba8d604}</Project>
       <Name>XamarinForms.Essentials.Azure.MobileApps</Name>
     </ProjectReference>
-    <ProjectReference Include="..\XamarinForms.Essentials.AppCenter\XamarinForms.Essentials.AppCenter.csproj">
+    <ProjectReference Include="..\XamarinForms.Essentials.AppCenterEssentials\XamarinForms.Essentials.AppCenterEssentials.csproj">
       <Project>{5c5ca4ea-41b4-42e5-bc9f-1c961edb65e2}</Project>
       <Name>XamarinForms.Essentials.Azure.MobileCenter</Name>
     </ProjectReference>

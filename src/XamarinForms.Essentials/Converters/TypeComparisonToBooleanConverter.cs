@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Globalization;
 using Xamarin.Forms;
+using XamarinForms.Essentials.MarkupExtensions;
 
-namespace XamarinForms.Essentials
+
+namespace XamarinForms.Essentials.Converters
 {
 
     /// <summary>
     /// 
     /// </summary>
-    /// <remarks>
-    /// https://github.com/xamarin/xamarin-forms-samples/blob/master/Behaviors/EventToCommandBehavior/EventToCommandBehavior/Converters/SelectedItemEventArgsToSelectedItemConverter.cs
-    /// </remarks>
-    public class ItemTappedEventArgsToItemConverter : IValueConverter
+    public class TypeComparisonToBooleanConverter : ConvertibleMarkupExtension<TypeComparisonToBooleanConverter>,  IValueConverter
     {
 
         /// <summary>
@@ -24,8 +23,7 @@ namespace XamarinForms.Essentials
         /// <returns></returns>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var eventArgs = value as ItemTappedEventArgs;
-            return eventArgs.Item;
+            return value == null ? false : (value.GetType() == (parameter as Type) ? true : false);
         }
 
         /// <summary>

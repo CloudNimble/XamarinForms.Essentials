@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Globalization;
 using Xamarin.Forms;
+using XamarinForms.Essentials.MarkupExtensions;
 
-namespace XamarinForms.Essentials
+
+namespace XamarinForms.Essentials.Converters
 {
-
     /// <summary>
-    /// 
+    /// Converts an Integer Value into an Enumeration. 
     /// </summary>
-    /// <remarks>
-    /// https://github.com/xamarin/xamarin-forms-samples/blob/master/Behaviors/EventToCommandBehavior/EventToCommandBehavior/Converters/SelectedItemEventArgsToSelectedItemConverter.cs
-    /// </remarks>
-    public class ItemTappedEventArgsToItemConverter : IValueConverter
+    public class StringToBooleanConverter : ConvertibleMarkupExtension<StringToBooleanConverter>, IValueConverter
     {
 
         /// <summary>
@@ -24,8 +22,10 @@ namespace XamarinForms.Essentials
         /// <returns></returns>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var eventArgs = value as ItemTappedEventArgs;
-            return eventArgs.Item;
+            bool result = false;
+            if (value != null && value is string)
+                Boolean.TryParse(value as string, out result);
+            return result;
         }
 
         /// <summary>
@@ -38,8 +38,9 @@ namespace XamarinForms.Essentials
         /// <returns></returns>
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            throw new NotImplementedException();
+            return ((bool)value).ToString();
         }
+
     }
 
 }

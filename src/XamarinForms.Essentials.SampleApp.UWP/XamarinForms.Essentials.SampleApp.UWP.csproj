@@ -139,7 +139,7 @@
       <Project>{bf382ee0-ad8e-4b4f-8f7f-c9d6fba8d604}</Project>
       <Name>XamarinForms.Essentials.Azure.MobileAppsEssentials</Name>
     </ProjectReference>
-    <ProjectReference Include="..\XamarinForms.Essentials.AppCenter\XamarinForms.Essentials.AppCenterEssentials.csproj">
+    <ProjectReference Include="..\XamarinForms.Essentials.AppCenterEssentials\XamarinForms.Essentials.AppCenterEssentials.csproj">
       <Project>{5c5ca4ea-41b4-42e5-bc9f-1c961edb65e2}</Project>
       <Name>XamarinForms.Essentials.AppCenterEssentials</Name>
     </ProjectReference>

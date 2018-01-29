@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Globalization;
 using Xamarin.Forms;
+using XamarinForms.Essentials.MarkupExtensions;
 
-namespace XamarinForms.Essentials
+namespace XamarinForms.Essentials.Converters
 {
 
     /// <summary>
-    /// 
+    /// Converts an Integer Value into a Visibility Enumeration based on the passed-in parameter. 
     /// </summary>
-    /// <remarks>
-    /// https://github.com/xamarin/xamarin-forms-samples/blob/master/Behaviors/EventToCommandBehavior/EventToCommandBehavior/Converters/SelectedItemEventArgsToSelectedItemConverter.cs
-    /// </remarks>
-    public class ItemTappedEventArgsToItemConverter : IValueConverter
+    public class IntEqualToBooleanConverter : ConvertibleMarkupExtension<IntEqualToBooleanConverter>, IValueConverter
     {
 
         /// <summary>
@@ -24,8 +22,12 @@ namespace XamarinForms.Essentials
         /// <returns></returns>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var eventArgs = value as ItemTappedEventArgs;
-            return eventArgs.Item;
+            if (value == null || parameter == null) return false;
+
+            int valueToCompare = (int)value;
+            int referenceValue = int.Parse((string)parameter);
+
+            return valueToCompare == referenceValue ? true : false;
         }
 
         /// <summary>
@@ -40,6 +42,7 @@ namespace XamarinForms.Essentials
         {
             throw new NotImplementedException();
         }
+
     }
 
 }

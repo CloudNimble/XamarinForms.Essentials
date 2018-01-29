@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>XamarinForms.Essentials</id>
-    <version>1.0.0-Beta2</version>
+    <version>1.0.0-Beta3</version>
     <authors>Robert McLaws</authors>
     <owners>CloudNimble</owners>
     <licenseUrl>http://www.ohloh.net/licenses/mslpl</licenseUrl>
-    <iconUrl>https://advancedrei.blob.core.windows.net/nuget/XamlEssentials.png</iconUrl>
+    <iconUrl>https://advancedrei.blob.core.windows.net/nuget/XamarinForms.Essentials.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A helper library of BindingConverters, MarkupExtensions, and other utilities for building XAML applications on platforms that support Xamarin.Forms.</description>
     <summary>A library of BindingConverters, MarkupExtensions, and helpers for Xamarin.Forms.</summary>
@@ -21,7 +21,7 @@
         <dependency id="PCLStorage" version="1.0.2" />
         <dependency id="Xam.Plugin.Connectivity" version="3.0.3" />
         <dependency id="Xam.Plugins.Settings" version="3.1.1" />
-        <dependency id="XamarinForms.Essentials.Core" version="1.0.0-Beta2" />
+        <dependency id="XamarinForms.Essentials.Core" version="1.0.0-Beta3" />
         <dependency id="Xamarin.Forms" version="2.5.0.122203" />
       </group>
       <!--<group targetFramework="MonoAndroid">

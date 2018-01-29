@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Globalization;
 using Xamarin.Forms;
+using XamarinForms.Essentials.MarkupExtensions;
 
-namespace XamarinForms.Essentials
+namespace XamarinForms.Essentials.Converters
 {
 
     /// <summary>
     /// 
     /// </summary>
-    /// <remarks>
-    /// https://github.com/xamarin/xamarin-forms-samples/blob/master/Behaviors/EventToCommandBehavior/EventToCommandBehavior/Converters/SelectedItemEventArgsToSelectedItemConverter.cs
-    /// </remarks>
-    public class ItemTappedEventArgsToItemConverter : IValueConverter
+    public class IntegerIsNotZeroToBooleanConverter : ConvertibleMarkupExtension<IntegerIsNotZeroToBooleanConverter>, IValueConverter
     {
 
         /// <summary>
@@ -24,8 +22,15 @@ namespace XamarinForms.Essentials
         /// <returns></returns>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var eventArgs = value as ItemTappedEventArgs;
-            return eventArgs.Item;
+            if (value == null) return false;
+            if (value.GetType() != typeof(int))
+            {
+                //Trace.TraceWarning("The value passed to the IntegerIsNotZeroConverter is not an Integer. Returning \"False\".");
+                return false;
+            }
+
+            bool flag = (int)value > 0;
+            return flag;
         }
 
         /// <summary>
